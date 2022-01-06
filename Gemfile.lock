@@ -2,10 +2,12 @@ PATH
   remote: .
   specs:
     ione (1.3.0.pre2)
+      concurrent-ruby (>= 1.1.9)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    concurrent-ruby (1.1.9)
     coveralls (0.7.0)
       multi_json (~> 1.3)
       rest-client
@@ -15,6 +17,7 @@ GEM
     diff-lcs (1.2.5)
     docile (1.1.3)
     http_parser.rb (0.6.0)
+    http_parser.rb (0.6.0-java)
     mime-types (2.1)
     multi_json (1.8.4)
     rake (10.1.1)
@@ -42,8 +45,10 @@ GEM
 
 PLATFORMS
   ruby
+  universal-java-11
 
 DEPENDENCIES
+  concurrent-ruby
   coveralls
   http_parser.rb
   ione!
@@ -52,3 +57,6 @@ DEPENDENCIES
   rspec
   simplecov
   yard
+
+BUNDLED WITH
+   2.2.29
